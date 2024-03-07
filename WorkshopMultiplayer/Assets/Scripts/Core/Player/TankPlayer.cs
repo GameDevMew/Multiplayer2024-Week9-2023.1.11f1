@@ -16,6 +16,7 @@ public class TankPlayer : NetworkBehaviour
     [SerializeField] private int ownerPriority = 15;
 
     public NetworkVariable<FixedString32Bytes> PlayerName = new NetworkVariable<FixedString32Bytes>();
+    public NetworkVariable<int> PlayerColorIndex = new NetworkVariable<int>();
 
     public override void OnNetworkSpawn()
     {
@@ -30,7 +31,7 @@ public class TankPlayer : NetworkBehaviour
 
         if(IsOwner)
         {
-            
+            virtualCamera.Priority = ownerPriority;
         }
     }
 }
