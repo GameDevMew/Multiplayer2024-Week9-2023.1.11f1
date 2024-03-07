@@ -13,6 +13,7 @@ using UnityEngine.SceneManagement;
 using System.Text;
 using Unity.Services.Authentication;
 
+
 public class ClientGameManager : IDisposable
 {
     private JoinAllocation allocation;
@@ -58,7 +59,8 @@ public class ClientGameManager : IDisposable
         UserData userData = new UserData
         {
             userName = PlayerPrefs.GetString(NameSelector.PlayerNameKey, "Missing Name"),
-            userAuthId = AuthenticationService.Instance.PlayerId
+            userAuthId = AuthenticationService.Instance.PlayerId,
+            userColorIndex = PlayerPrefs.GetInt(ColorSelector.PlayerColorKey,0)
         };
         string payload = JsonUtility.ToJson(userData);
         byte[] payloadBytes = Encoding.UTF8.GetBytes(payload);
