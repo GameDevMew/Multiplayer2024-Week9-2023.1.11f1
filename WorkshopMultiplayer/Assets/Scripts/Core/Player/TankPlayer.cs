@@ -27,6 +27,7 @@ public class TankPlayer : NetworkBehaviour
                 HostSingleton.Instance.GameManager.NetworkServer.GetUserDataByClientId(OwnerClientId);
 
             PlayerName.Value = userData.userName;
+            PlayerColorIndex.Value = userData.userColorIndex;
         }
 
         if(IsOwner)
