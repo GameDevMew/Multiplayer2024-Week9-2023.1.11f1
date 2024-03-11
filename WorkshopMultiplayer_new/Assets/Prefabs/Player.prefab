@@ -912,6 +912,7 @@ GameObject:
   - component: {fileID: 2865316714111466608}
   - component: {fileID: 2978007315538239280}
   - component: {fileID: 2102988540257419042}
+  - component: {fileID: 4773402368805053872}
   m_Layer: 0
   m_Name: FollowCam
   m_TagString: Untagged
@@ -1069,6 +1070,58 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &4773402368805053872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7116439219045812647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6307b2084c24b7043bbe42d3af66ab8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virtualCamera: {fileID: 2865316714111466608}
+  <Health>k__BackingField: {fileID: 5266933999563539585}
+  ownerPriority: 15
+  PlayerName:
+    m_InternalValue:
+      utf8LengthInBytes: 0
+      bytes:
+        offset0000:
+          byte0000: 0
+          byte0001: 0
+          byte0002: 0
+          byte0003: 0
+          byte0004: 0
+          byte0005: 0
+          byte0006: 0
+          byte0007: 0
+          byte0008: 0
+          byte0009: 0
+          byte0010: 0
+          byte0011: 0
+          byte0012: 0
+          byte0013: 0
+          byte0014: 0
+          byte0015: 0
+        byte0016: 0
+        byte0017: 0
+        byte0018: 0
+        byte0019: 0
+        byte0020: 0
+        byte0021: 0
+        byte0022: 0
+        byte0023: 0
+        byte0024: 0
+        byte0025: 0
+        byte0026: 0
+        byte0027: 0
+        byte0028: 0
+        byte0029: 0
+  PlayerColorIndex:
+    m_InternalValue: 0
 --- !u!1 &8441154497543463324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,6 +1224,7 @@ GameObject:
   - component: {fileID: 5266933999563539585}
   - component: {fileID: 1029310053321726800}
   - component: {fileID: 8230145134029264866}
+  - component: {fileID: 8242000585911807604}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1370,6 +1424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 2865316714111466608}
+  <Health>k__BackingField: {fileID: 5266933999563539585}
   ownerPriority: 15
   PlayerName:
     m_InternalValue:
@@ -1406,3 +1461,28 @@ MonoBehaviour:
         byte0027: 0
         byte0028: 0
         byte0029: 0
+  PlayerColorIndex:
+    m_InternalValue: 0
+--- !u!114 &8242000585911807604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923566233319816646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff1684b3c641eaa48ba1a3df69402d87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8230145134029264866}
+  playerSprites:
+  - {fileID: 7955243105143582134}
+  - {fileID: 8548791072301137352}
+  tankColor:
+  - {r: 0, g: 0.043137256, b: 0.9960785, a: 1}
+  - {r: 0.9960785, g: 0.9960785, b: 0, a: 1}
+  - {r: 0.9960785, g: 0, b: 0.9333334, a: 1}
+  - {r: 0.9960785, g: 0, b: 0, a: 1}
+  - {r: 0.058823533, g: 0.9960785, b: 0, a: 1}
+  colorIndex: 0
